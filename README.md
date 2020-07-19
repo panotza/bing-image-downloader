@@ -15,5 +15,5 @@
 
 ## Example
 ```bash
-  bing-image-downloader.exe "/home/user" UHD
+  bing-image-downloader "/home/user" UHD
 ```
