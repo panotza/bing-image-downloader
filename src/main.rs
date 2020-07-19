@@ -33,7 +33,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let original_resolution = re_size.captures(href).unwrap().get(1).unwrap().as_str();
     let file_name = re_file_name.captures(href).unwrap().get(0).unwrap().as_str().replace(original_resolution, req_resolution.as_str());
 
-    let image_url = format!("https://www.bing.com{}&rf=LaDigue_UHD.jpg&w=3840&h=2160&c=8&rs=1&o=3&r=0", href.replace(original_resolution, req_resolution.as_str()));
+    let image_url = format!("https://www.bing.com{}", href.replace(original_resolution, req_resolution.as_str()));
     let resp = reqwest::get(image_url.as_str()).await?;
     if resp.status() != 200 {
         return Err("Image not found".into());
