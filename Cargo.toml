@@ -1,0 +1,12 @@
+[package]
+name = "bing-image-downloader"
+version = "0.1.0"
+authors = ["Panot Wongkhot <panotza_ja@hotmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.10.6", features = ["blocking"] }
+tokio = { version = "0.2.21", features = ["full"] }
+regex = "1"
