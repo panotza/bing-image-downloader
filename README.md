@@ -11,7 +11,7 @@
 
 ## Usage 
 - Clone Project and run `Cargo build`
-- run `bing-image-downloader image_dir size`
+- Run `bing-image-downloader image_dir size`
 
 ## Example
 ```bash
